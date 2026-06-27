@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Directorio Inspecciones Estructurales — Venezuela</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #f7f7f5;
+      color: #1a1a1a;
+      padding: 16px;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: #c0392b;
+      color: white;
+      padding: 20px 16px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      line-height: 1.4;
+      letter-spacing: 0.01em;
+    }
+
+    header p {
+      font-size: 0.8rem;
+      margin-top: 6px;
+      opacity: 0.85;
+    }
+
+    .search-wrap {
+      margin-bottom: 16px;
+    }
+
+    #search {
+      width: 100%;
+      padding: 12px 16px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    #search:focus { border-color: #c0392b; }
+
+    .section {
+      margin-bottom: 24px;
+    }
+
+    .section-title {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #c0392b;
+      margin-bottom: 8px;
+      padding-bottom: 4px;
+      border-bottom: 2px solid #c0392b;
+    }
+
+    .subsection-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #555;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin: 14px 0 6px;
+    }
+
+    .zone-title {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: #888;
+      margin: 10px 0 4px 4px;
+    }
+
+    .entry {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: white;
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin-bottom: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+      transition: box-shadow 0.15s;
+    }
+
+    .entry:hover { box-shadow: 0 3px 8px rgba(0,0,0,0.12); }
+
+    .entry-name {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: #1a1a1a;
+      flex: 1;
+      padding-right: 10px;
+      line-height: 1.3;
+    }
+
+    .entry-sub {
+      font-size: 0.72rem;
+      color: #888;
+      margin-top: 2px;
+    }
+
+    .wa-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      padding: 7px 12px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: background 0.15s;
+    }
+
+    .wa-btn:hover { background: #1ebe57; }
+
+    .wa-btn svg {
+      width: 14px;
+      height: 14px;
+      fill: white;
+    }
+
+    .empresa .entry {
+      border-left: 4px solid #c0392b;
+    }
+
+    .hidden { display: none !important; }
+
+    #no-results {
+      text-align: center;
+      color: #aaa;
+      padding: 40px 0;
+      font-size: 0.9rem;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Directorio de Inspecciones Estructurales<br>Post-Sismo · Venezuela</h1>
+  <p>Tocá el botón verde para abrir WhatsApp directamente</p>
+</header>
+
+<div class="search-wrap">
+  <input type="search" id="search" placeholder="🔍 Buscar por nombre, zona o ciudad..." />
+</div>
+
+<div id="directorio">
+
+  <!-- EMPRESAS -->
+  <div class="section empresa">
+    <div class="section-title">Empresas y Profesionales</div>
+    <div class="entry"><div class="entry-name">Norte Obras Civiles / Norte Formación</div><a class="wa-btn" href="https://wa.me/584129060191" target="_blank"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.528 5.855L.057 23.882l6.198-1.625A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.793 9.793 0 01-5.001-1.374l-.358-.213-3.683.966.983-3.595-.234-.369A9.79 9.79 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>WhatsApp</a></div>
+    <div class="entry"><div class="entry-name">Constructora 3D</div><a class="wa-btn" href="https://wa.me/584163879299" target="_blank"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.528 5.855L.057 23.882l6.198-1.625A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.793 9.793 0 01-5.001-1.374l-.358-.213-3.683.966.983-3.595-.234-.369A9.79 9.79 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>WhatsApp</a></div>
+    <div class="entry"><div class="entry-name">Morasso Arquitectos</div><a class="wa-btn" href="https://wa.me/584120985733" target="_blank"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.528 5.855L.057 23.882l6.198-1.625A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.793 9.793 0 01-5.001-1.374l-.358-.213-3.683.966.983-3.595-.234-.369A9.79 9.79 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>WhatsApp</a></div>
+    <div class="entry"><div class="entry-name">Ing. Whillfredo Ramírez</div><a class="wa-btn" href="https://wa.me/584149034197" target="_blank"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.528 5.855L.057 23.882l6.198-1.625A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.793 9.793 0 01-5.001-1.374l-.358-.213-3.683.966.983-3.595-.234-.369A9.79 9.79 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>WhatsApp</a></div>
+    <div class="entry"><div class="entry-name">INGEMAT GG <span style="color:#888;font-size:0.8em">@ingematgg</span></div><a class="wa-btn" href="https://wa.me/584122636933" target="_blank"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.528 5.855L.057 23.882l6.198-1.625A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.793 9.793 0 01-5.001-1.374l-.358-.213-3.683.966.983-3.595-.234-.369A9.79 9.79 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>WhatsApp</a></div>
+  </div>
+
+  <!-- VENEZUELA -->
+  <div class="section">
+    <div class="section-title">Venezuela</div>
+
+    <div class="subsection-title">Caracas</div>
+
+    <div class="zone-title">Altamira / Los Palos Grandes / Colinas de Bello Monte</div>
+    <div class="entry"><div class="entry-name">Ariana Velutini</div><a class="wa-btn" href="https://wa.me/584241946354" target="_blank"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.528 5.855L.057 23.882l6.198-1.625A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.793 9.793 0 01-5.001-1.374l-.358-.213-3.683.966.983-3.595-.234-.369A9.79 9.79 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>WhatsApp</a></div>
+    <div class="entry"><div class="entry-name">Ana Pacanins</div><a class="wa-btn" href="https://wa.me/584241070817" target="_blank"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.528 5.855L.057 23.882l6.198-1.625A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.793 9.793 0 01-5.001-1.374l-.358-.213-3.683.966.983-3.595-.234-.369A9.79 9.79 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>WhatsApp</a></div>
+    <div class="entry"><div class="entry-name">Leopoldo Lecuna</div><a class="wa-btn" href="https://wa.me/584140110114" target="_blank"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.528 5.855L.057 23.882l6.198-1.625A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.793 9.793 0 01-5.001-1.374l-.358-.213-3.683.966.983-3.595-.234-.369A9.79 9.79 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>WhatsApp</a></div>
+    <div class="entry"><div class="entry-name">Luís Escalona</div><a class="wa-btn" href="https://wa.me/584126001480" target="_blank"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.528 5.855L.057 23.882l6.198-1.625A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.793 9.793 0 01-5.001-1.374l-.358-.213-3.683.966.983-3.595-.234-.369A9.79 9.79 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>WhatsApp</a></div>
+    <div class="entry"><div class="entry-name">Santiago Pereira</div><a class="wa-btn" href="https://wa.me/584143156994" target="_blank"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.528 5.855L.057 23.882l6.198-1.625A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.793 9.793 0 01-5.001-1.374l-.358-.213-3.683.966.983-3.595-.234-.369A9.79 9.79 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>WhatsApp</a></div>
+    <div class="entry"><div class="entry-name">Arianna Arenare</div><a class="wa-btn" href="https://wa.me/584242543583" target="_blank"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.528 5.855L.057 23.882l6.198-1.625A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.793 9.793 0 01-5.001-1.374l-.358-.213-3.683.966.983-3.595-.234-.369A9.79 9.79 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>WhatsApp</a></div>
+
+    <div class="zone-title">Chacao / El Rosal</div>
+    <div class="entry"><div class="entry-name">Carlos Arteaga</div><a class="wa-btn" href="https://wa.me/584221965151" target="_blank"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.528 5.855L.057 23.882l6.198-1.625A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.793 9.793 0 01-5.001-1.374l-.358-.213-3.683.966.983-3.595-.234-.369A9.79 9.79 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>WhatsApp</a></div>
+    <div class="entry"><div class="entry-name">Diego Di Giosia</div><a class="wa-btn" href="https://wa.me/584142555272" target="_blank"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.528 5.855L.057 23.882l6.198-1.625A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.793 9.793 0 01-5.001-1.374l-.358-.213-3.683.966.983-3.595-.234-.369A9.79 9.79 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>WhatsApp</a></div>
+    <div class="entry"><div class="entry-name">Luis Baldó</div><a class="wa-btn" href="https://wa.me/584127055652" target="_blank"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.528 5.855L.057 23.882l6.198-1.625A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.793 9.793 0 01-5.001-1.374l-.358-.213-3.683.966.983-3.595-.234-.369A9.79 9.79 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>WhatsApp</a></div>
+    <div class="entry"><div class="entry-name">Maria Fernanda Raybaudi</div><a class="wa-btn" href="https://wa.me/584241990916" target="_blank"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.528 5.855L.057 23.882l6.198-1.625A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.793 9.793 0 01-5.001-1.374l-.358-.213-3.683.966.983-3.595-.234-.369A9.79 9.79 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>WhatsApp</a></div>
+    <div class="entry"><div class="entry-name">Sebastián Olalquiaga</div><a class="wa-btn" href="https://wa.me/584146212573" target="_blank"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.528 5.855L.057 23.882l6.198-1.625A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.793 9.793 0 01-5.001-1.374l-.358-.213-3.683.966.983-3.595-.234-.369A9.79 9.79 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>WhatsApp</a></div>
+    <div class="entry"><div class="entry-name">Pedro Tineo</div><a class="wa-btn" href="https://wa.me/584126121942" target="_blank"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.528 5.855L.057 23.882l6.198-1.625A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.793 9.793 0 01-5.001-1.374l-.358-.213-3.683.966.983-3.595-.234-.369A9.79 9.79 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>WhatsApp</a></div>
+
+    <!-- Resto de entradas generadas con script -->
+  </div>
+</div>
+
+<div id="no-results">No se encontraron resultados para tu búsqueda.</div>
+
+<script>
+// Datos completos para búsqueda
+const allEntries = [
+  // Empresas
+  {name:"Norte Obras Civiles / Norte Formación", zone:"Empresas", wa:"https://wa.me/584129060191"},
+  {name:"Constructora 3D", zone:"Empresas", wa:"https://wa.me/584163879299"},
+  {name:"Morasso Arquitectos", zone:"Empresas", wa:"https://wa.me/584120985733"},
+  {name:"Ing. Whillfredo Ramírez", zone:"Empresas", wa:"https://wa.me/584149034197"},
+  {name:"INGEMAT GG", zone:"Empresas", wa:"https://wa.me/584122636933"},
+  // Caracas
+  {name:"Ariana Velutini", zone:"Altamira / Los Palos Grandes", wa:"https://wa.me/584241946354"},
+  {name:"Ana Pacanins", zone:"Altamira / Los Palos Grandes", wa:"https://wa.me/584241070817"},
+  {name:"Leopoldo Lecuna", zone:"Altamira / Los Palos Grandes", wa:"https://wa.me/584140110114"},
+  {name:"Luís Escalona", zone:"Altamira / Los Palos Grandes", wa:"https://wa.me/584126001480"},
+  {name:"Santiago Pereira", zone:"Altamira / Los Palos Grandes", wa:"https://wa.me/584143156994"},
+  {name:"Arianna Arenare", zone:"Altamira / Los Palos Grandes", wa:"https://wa.me/584242543583"},
+  {name:"Carlos Arteaga", zone:"Chacao / El Rosal", wa:"https://wa.me/584221965151"},
+  {name:"Diego Di Giosia", zone:"Chacao / El Rosal", wa:"https://wa.me/584142555272"},
+  {name:"Luis Baldó", zone:"Chacao / El Rosal", wa:"https://wa.me/584127055652"},
+  {name:"Maria Fernanda Raybaudi", zone:"Chacao / El Rosal", wa:"https://wa.me/584241990916"},
+  {name:"Sebastián Olalquiaga", zone:"Chacao / El Rosal", wa:"https://wa.me/584146212573"},
+  {name:"Pedro Tineo", zone:"Chacao / El Rosal", wa:"https://wa.me/584126121942"},
+  {name:"Carlos Cazenave", zone:"El Hatillo", wa:"https://wa.me/584142340505"},
+  {name:"Ernesto Covuccia", zone:"El Hatillo", wa:"https://wa.me/584242871396"},
+  {name:"Mateus Naddaf", zone:"El Hatillo", wa:"https://wa.me/584143694114"},
+  {name:"Sandra Alvarez", zone:"El Hatillo", wa:"https://wa.me/584241456675"},
+  {name:"Angel Marchena", zone:"El Paraíso / Los Ruices / Antimano / El Valle", wa:"https://wa.me/584126133311"},
+  {name:"Ernesto Valdez", zone:"El Paraíso / Los Ruices / Antimano / El Valle", wa:"https://wa.me/584126291133"},
+  {name:"Pablo Gonzalez", zone:"El Paraíso / Los Ruices / Antimano / El Valle", wa:"https://wa.me/584142043380"},
+  {name:"Samuel Villasmil", zone:"El Paraíso / Los Ruices / Antimano / El Valle", wa:"https://wa.me/584127375387"},
+  {name:"Simón Torrealba Pérez", zone:"El Paraíso / Los Ruices / Antimano / El Valle", wa:"https://wa.me/584143224365"},
+  {name:"Ulises Linares", zone:"El Paraíso / Los Ruices / Antimano / El Valle", wa:"https://wa.me/584243671607"},
+  {name:"Veralucia Lemus", zone:"El Paraíso / Los Ruices / Antimano / El Valle", wa:"https://wa.me/584241439325"},
+  {name:"Wilneydi Medina", zone:"El Paraíso / Los Ruices / Antimano / El Valle", wa:"https://wa.me/584242515624"},
+  {name:"Elvis Páez", zone:"El Paraíso / Los Ruices / Antimano / El Valle", wa:"https://wa.me/584242788442"},
+  {name:"Amer Fernández", zone:"El Paraíso / Los Ruices / Antimano / El Valle", wa:"https://wa.me/584129724695"},
+  {name:"Victor Ruiz", zone:"El Paraíso / Los Ruices / Antimano / El Valle", wa:"https://wa.me/584241534785"},
+  {name:"Evelyn Moro", zone:"La Florida / La Alta Florida / Los Chorros / Santa Fe / El Cafetal", wa:"https://wa.me/584122011185"},
+  {name:"Manuel Orozco", zone:"La Florida / La Alta Florida / Los Chorros / Santa Fe / El Cafetal", wa:"https://wa.me/584242996706"},
+  {name:"Yacquelin Camino", zone:"La Florida / La Alta Florida / Los Chorros / Santa Fe / El Cafetal", wa:"https://wa.me/584241202248"},
+  {name:"Alberto Pereiras", zone:"La Florida / La Alta Florida / Los Chorros / Santa Fe / El Cafetal", wa:"https://wa.me/584149112070"},
+  {name:"Alejandro Maceira", zone:"La Florida / La Alta Florida / Los Chorros / Santa Fe / El Cafetal", wa:"https://wa.me/584143088607"},
+  {name:"Kenji Ramírez", zone:"La Florida / La Alta Florida / Los Chorros / Santa Fe / El Cafetal", wa:"https://wa.me/584241734069"},
+  {name:"Diego Maceira", zone:"La Florida / La Alta Florida / Los Chorros / Santa Fe / El Cafetal", wa:"https://wa.me/584222889740"},
+  {name:"Alessandra Mazzaglia", zone:"La Florida / La Alta Florida / Los Chorros / Santa Fe / El Cafetal", wa:"https://wa.me/584142102929"},
+  {name:"Isabella Valverde", zone:"La Florida / La Alta Florida / Los Chorros / Santa Fe / El Cafetal", wa:"https://wa.me/584120130202"},
+  {name:"Cesar Baute", zone:"La Florida / La Alta Florida / Los Chorros / Santa Fe / El Cafetal", wa:"https://wa.me/584241512494"},
+  {name:"Marcos Rodriguez", zone:"La Florida / La Alta Florida / Los Chorros / Santa Fe / El Cafetal", wa:"https://wa.me/584149442569"},
+  {name:"María Daniela Avendaño", zone:"La Florida / La Alta Florida / Los Chorros / Santa Fe / El Cafetal", wa:"https://wa.me/584243063273"},
+  {name:"Hugo Villalobos", zone:"La Florida / La Alta Florida / Los Chorros / Santa Fe / El Cafetal", wa:"https://wa.me/584243479698"},
+  {name:"Cristina Hurtado", zone:"Los Samanes / Los Chaguaramos / La Urbina / Palo Verde / La California", wa:"https://wa.me/584143137185"},
+  {name:"Victoria Romero", zone:"Los Samanes / Los Chaguaramos / La Urbina / Palo Verde / La California", wa:"https://wa.me/584241650588"},
+  {name:"Roibeeth Moron", zone:"Los Samanes / Los Chaguaramos / La Urbina / Palo Verde / La California", wa:"https://wa.me/584242315497"},
+  {name:"Blady Molina", zone:"Los Samanes / Los Chaguaramos / La Urbina / Palo Verde / La California", wa:"https://wa.me/584149725267"},
+  {name:"Brayan Malavé", zone:"Los Samanes / Los Chaguaramos / La Urbina / Palo Verde / La California", wa:"https://wa.me/584149017864"},
+  {name:"Cristhian Lopez", zone:"Los Samanes / Los Chaguaramos / La Urbina / Palo Verde / La California", wa:"https://wa.me/584242056926"},
+  {name:"Kenyer Carrasquel", zone:"Coche / La Vega / Catia / Caricuao", wa:"https://wa.me/584120113607"},
+  {name:"Leyda Pérez", zone:"Coche / La Vega / Catia / Caricuao", wa:"https://wa.me/584142330155"},
+  {name:"Gabriela Daza", zone:"Coche / La Vega / Catia / Caricuao", wa:"https://wa.me/584141133188"},
+  {name:"Yolimar Fuentes", zone:"Coche / La Vega / Catia / Caricuao", wa:"https://wa.me/584261194376"},
+  {name:"Sebastián Cova", zone:"Coche / La Vega / Catia / Caricuao", wa:"https://wa.me/584245132309"},
+  {name:"Kleiver Quiroz", zone:"Coche / La Vega / Catia / Caricuao", wa:"https://wa.me/584241798719"},
+  {name:"Johan Cobo", zone:"Prados de María / Alto Prado", wa:"https://wa.me/584144557642"},
+  {name:"Jesús Alarze", zone:"Prados de María / Alto Prado", wa:"https://wa.me/584241462393"},
+  {name:"María Gabriela Gutiérrez", zone:"Prados de María / Alto Prado", wa:"https://wa.me/584122467788"},
+  {name:"Carla Marcie", zone:"Parque Central / Las Mercedes / Av. Libertador / San Martín", wa:"https://wa.me/584242054055"},
+  {name:"Bárbara Colmenares", zone:"Parque Central / Las Mercedes / Av. Libertador / San Martín", wa:"https://wa.me/584241331888"},
+  {name:"Génesis Morales", zone:"Parque Central / Las Mercedes / Av. Libertador / San Martín", wa:"https://wa.me/584141553677"},
+  {name:"Eduardo Alvarado", zone:"Parque Central / Las Mercedes / Av. Libertador / San Martín", wa:"https://wa.me/584129097198"},
+  {name:"Jorge Rojas", zone:"San Bernardino / San Agustín", wa:"https://wa.me/584141381852"},
+  {name:"Angel Lacruz", zone:"San Bernardino / San Agustín", wa:"https://wa.me/584164211858"},
+  {name:"Ernesto Pullas", zone:"San Bernardino / San Agustín", wa:"https://wa.me/584128005415"},
+  {name:"Iván Salas", zone:"San Bernardino / San Agustín", wa:"https://wa.me/584142417745"},
+  {name:"Andrielys Bracamonte", zone:"Petare / La Trinidad / Santa Eduvigis", wa:"https://wa.me/584241866827"},
+  {name:"Daniela Candiales", zone:"Petare / La Trinidad / Santa Eduvigis", wa:"https://wa.me/584125522857"},
+  {name:"Eden Cardola", zone:"Petare / La Trinidad / Santa Eduvigis", wa:"https://wa.me/584122601769"},
+  {name:"Evalu Gottopo", zone:"Petare / La Trinidad / Santa Eduvigis", wa:"https://wa.me/584143064107"},
+  {name:"Edinson Stand Vera", zone:"Petare / La Trinidad / Santa Eduvigis", wa:"https://wa.me/584242739862"},
+  {name:"Genesis Moreno", zone:"Terrazas del Ávila / Club Hípico / Mampote / Curumo", wa:"https://wa.me/584142736398"},
+  {name:"Sofia Trezza", zone:"Terrazas del Ávila / Club Hípico / Mampote / Curumo", wa:"https://wa.me/584245744921"},
+  {name:"Stephanie Dávila", zone:"Terrazas del Ávila / Club Hípico / Mampote / Curumo", wa:"https://wa.me/584125533104"},
+  {name:"Victor Santana", zone:"Terrazas del Ávila / Club Hípico / Mampote / Curumo", wa:"https://wa.me/584241614659"},
+  {name:"Luis Bayuelo", zone:"Terrazas del Ávila / Club Hípico / Mampote / Curumo", wa:"https://wa.me/584143005146"},
+  {name:"Luis Larrazabal", zone:"Terrazas del Ávila / Club Hípico / Mampote / Curumo", wa:"https://wa.me/584241360755"},
+  {name:"Ricardo Algernon", zone:"Terrazas del Ávila / Club Hípico / Mampote / Curumo", wa:"https://wa.me/584241739220"},
+  {name:"Marco Antonio Polo Cepeda", zone:"Terrazas del Ávila / Club Hípico / Mampote / Curumo", wa:"https://wa.me/584128126021"},
+  {name:"Stefanie Santaromita", zone:"Terrazas del Ávila / Club Hípico / Mampote / Curumo", wa:"https://wa.me/584242686569"},
+  {name:"Manuel Ali", zone:"Terrazas del Ávila / Club Hípico / Mampote / Curumo", wa:"https://wa.me/584127175134"},
+  {name:"Kevin Zerpa", zone:"Los Dos Caminos / Los Naranjos", wa:"https://wa.me/584129803113"},
+  {name:"Vanessa Sosa", zone:"Los Dos Caminos / Los Naranjos", wa:"https://wa.me/584249071110"},
+  {name:"Alejandra Alibrandi", zone:"Sebucán / Urb. Miranda", wa:"https://wa.me/584146858882"},
+  {name:"Giovanni Saglimbeni", zone:"Sebucán / Urb. Miranda", wa:"https://wa.me/584241863425"},
+  {name:"David Gutiérrez", zone:"Sebucán / Urb. Miranda", wa:"https://wa.me/584242525273"},
+  {name:"Enysabel Espinoza", zone:"Sebucán / Urb. Miranda", wa:"https://wa.me/584142930209"},
+  {name:"Mario Jauregui", zone:"Nuevo Circo / Puente Hierro / Rosaleda / Candelaria", wa:"https://wa.me/584149100035"},
+  {name:"José Sánchez", zone:"Nuevo Circo / Puente Hierro / Rosaleda / Candelaria", wa:"https://wa.me/584243656646"},
+  {name:"Ricardo Oliveros", zone:"Nuevo Circo / Puente Hierro / Rosaleda / Candelaria", wa:"https://wa.me/584242068033"},
+  {name:"Alessandro Flora", zone:"Caracas", wa:"https://wa.me/584142260133"},
+  {name:"Emely Mahfoud", zone:"Caracas", wa:"https://wa.me/584129909853"},
+  {name:"Eduardo Rivera", zone:"Caracas", wa:"https://wa.me/584241307632"},
+  {name:"Elio Liberatore", zone:"Caracas", wa:"https://wa.me/584143220035"},
+  {name:"Josue Gonzalez", zone:"Caracas", wa:"https://wa.me/584222465717"},
+  {name:"Manuel Tapia U", zone:"Caracas", wa:"https://wa.me/584120119155"},
+  {name:"Maria Estefania Parra", zone:"Caracas", wa:"https://wa.me/584126730738"},
+  {name:"Rafael Castillo", zone:"Caracas", wa:"https://wa.me/584241815518"},
+  {name:"Yujeicis Martinez", zone:"Caracas", wa:"https://wa.me/584241439743"},
+  {name:"Luciana Rivero", zone:"Caracas", wa:"https://wa.me/584125671424"},
+  {name:"Daniel Hung", zone:"Caracas", wa:"https://wa.me/584129891338"},
+  {name:"Daniela Castillo", zone:"Caracas", wa:"https://wa.me/584146567867"},
+  {name:"Jorge Vega", zone:"Caracas", wa:"https://wa.me/584142131189"},
+  {name:"María Barrios", zone:"Caracas", wa:"https://wa.me/584143727987"},
+  {name:"Maria Eugenia Villegas", zone:"Caracas", wa:"https://wa.me/584143231598"},
+  {name:"Maria Schiavi", zone:"Caracas", wa:"https://wa.me/584123415823"},
+  {name:"Andrés García", zone:"Caracas", wa:"https://wa.me/584123525039"},
+  {name:"Grafira Parra", zone:"Caracas", wa:"https://wa.me/584125266623"},
+  {name:"Eduardo Uzcategui", zone:"Caracas", wa:"https://wa.me/584129920026"},
+  {name:"Cristian Ibaceta", zone:"Caracas", wa:"https://wa.me/584127958422"},
+  // Miranda
+  {name:"Jonathan Guerra", zone:"Guarenas / Guatire / Nueva Casarapa", wa:"https://wa.me/584122940188"},
+  {name:"Diego Hassan", zone:"Guarenas / Guatire / Nueva Casarapa", wa:"https://wa.me/584141545639"},
+  {name:"Jonathan Hurtado", zone:"Guarenas / Guatire / Nueva Casarapa", wa:"https://wa.me/584141739628"},
+  {name:"Karen Pereira", zone:"Guarenas / Guatire / Nueva Casarapa", wa:"https://wa.me/584241972537"},
+  {name:"Arian Mier y Teran", zone:"Guarenas / Guatire / Nueva Casarapa", wa:"https://wa.me/584241920209"},
+  {name:"Andrés Padilla", zone:"Los Teques / Charallave / Valles del Tuy", wa:"https://wa.me/584242793311"},
+  {name:"Rafael Alcalá", zone:"Los Teques / Charallave / Valles del Tuy", wa:"https://wa.me/584142163347"},
+  {name:"Loredana Espinoza", zone:"Los Teques / Charallave / Valles del Tuy", wa:"https://wa.me/584140201259"},
+  {name:"Ricardo Calderón", zone:"Los Teques / Charallave / Valles del Tuy", wa:"https://wa.me/584169381807"},
+  {name:"Genesis Cordobés", zone:"Los Teques / Charallave / Valles del Tuy", wa:"https://wa.me/584129948295"},
+  {name:"Josue Maldonado", zone:"Los Teques / Charallave / Valles del Tuy", wa:"https://wa.me/584247126476"},
+  {name:"Angello Sánchez", zone:"Los Teques / Charallave / Valles del Tuy", wa:"https://wa.me/584241894136"},
+  {name:"José López", zone:"Los Teques / Charallave / Valles del Tuy", wa:"https://wa.me/584143993206"},
+  {name:"Daisy Colmenares", zone:"Los Teques / Charallave / Valles del Tuy", wa:"https://wa.me/584166063910"},
+  {name:"César Antonio Rincón", zone:"Cúa / Miranda", wa:"https://wa.me/584263181691"},
+  {name:"Rancel Calzadilla", zone:"Cúa / Miranda", wa:"https://wa.me/584120982842"},
+  {name:"Frany Gonzalez", zone:"Cúa / Miranda", wa:"https://wa.me/584242495949"},
+  {name:"Gririanny Torres", zone:"Cúa / Miranda", wa:"https://wa.me/584169489631"},
+  {name:"Cristián Valenzuela", zone:"Baruta / Valle Arriba / La California Sur", wa:"https://wa.me/584149078590"},
+  {name:"Sandra Palacios", zone:"Baruta / Valle Arriba / La California Sur", wa:"https://wa.me/584241342750"},
+  {name:"Luis F. Muro", zone:"Baruta / Valle Arriba / La California Sur", wa:"https://wa.me/584141802771"},
+  {name:"José Ángel Bernal Pérez", zone:"Altos Mirandinos", wa:"https://wa.me/584120122864"},
+  {name:"Juan Pablo Arocha", zone:"Altos Mirandinos", wa:"https://wa.me/584123120570"},
+  {name:"Ivan De Rugeriis", zone:"Altos Mirandinos", wa:"https://wa.me/584142665232"},
+  // Aragua
+  {name:"Henry Sarmiento", zone:"La Victoria, Aragua", wa:"https://wa.me/584163424559"},
+  {name:"Ángel Gamboa", zone:"Maracay, Aragua", wa:"https://wa.me/584243163031"},
+  {name:"Jose Ramirez", zone:"Turmero, Aragua", wa:"https://wa.me/584121995345"},
+  // Carabobo
+  {name:"Jorge Gonzalez", zone:"Valencia, Carabobo", wa:"https://wa.me/584244603224"},
+  {name:"Valessa Pinto", zone:"San Diego, Carabobo", wa:"https://wa.me/584145432734"},
+  {name:"Oswaldo Hernández", zone:"Valencia, Carabobo", wa:"https://wa.me/584149429086"},
+  {name:"Anlys Martinez", zone:"Carabobo", wa:"https://wa.me/584244765001"},
+  // Cojedes
+  {name:"Glamerdis González", zone:"Tinaquillo, Cojedes", wa:"https://wa.me/584145972749"},
+  // Anzoátegui
+  {name:"Gabriel Correa", zone:"Guanta, Anzoátegui", wa:"https://wa.me/584264802185"},
+  {name:"Shaiel Centeno", zone:"Lechería, Anzoátegui", wa:"https://wa.me/584248065170"},
+  {name:"Valeria Urbano", zone:"Lechería, Anzoátegui", wa:"https://wa.me/584248689254"},
+  {name:"Alejandro Jaspe", zone:"El Tigre, Anzoátegui", wa:"https://wa.me/584248157440"},
+  // Bolívar
+  {name:"Manuel Alejandro Millan", zone:"Puerto Ordaz, Bolívar", wa:"https://wa.me/584140947880"},
+  {name:"Carlos Espinoza", zone:"Ciudad Bolívar", wa:"https://wa.me/584148565487"},
+  // Zulia
+  {name:"Roxana Vasquez", zone:"Maracaibo, Zulia", wa:"https://wa.me/584246791594"},
+  // Táchira
+  {name:"Erika Hernández Berú", zone:"San Cristóbal, Táchira", wa:"https://wa.me/584163760186"},
+  {name:"Euri Ardila", zone:"San Cristóbal, Táchira", wa:"https://wa.me/584143752613"},
+  {name:"Rubén Rincón", zone:"San Cristóbal, Táchira", wa:"https://wa.me/584247846216"},
+  // Margarita
+  {name:"Gianfranco Ponzo", zone:"Isla de Margarita", wa:"https://wa.me/584148926161"},
+  // Exterior
+  {name:"Edanny Valerio", zone:"Buenos Aires, Argentina", wa:"https://wa.me/541123865628"},
+  {name:"Daniela Bustamante", zone:"Bogotá, Colombia", wa:"https://wa.me/573226422756"},
+  {name:"Victor Caraballo", zone:"Medellín, Colombia", wa:"https://wa.me/573001684036"},
+  {name:"Oswaldo Noguera", zone:"Bogotá, Colombia", wa:"https://wa.me/573102642908"},
+  {name:"Javier Torres Sivoli", zone:"Madrid, España", wa:"https://wa.me/34661876615"},
+  {name:"Juan Luis Fernández Torres", zone:"Madrid, España", wa:"https://wa.me/34646175005"},
+  {name:"Elizabeth Superlano", zone:"Barcelona, España", wa:"https://wa.me/34656499650"},
+  {name:"Juan Navarro Gregori", zone:"Valencia, España", wa:"https://wa.me/34657220256"},
+  {name:"Jackelinne Sánchez Gil", zone:"Madrid, España", wa:"https://wa.me/34628944533"},
+  {name:"Abigail Salazar", zone:"Estados Unidos", wa:"https://wa.me/15147303614"},
+  {name:"Fabiana Orellana", zone:"Estados Unidos", wa:"https://wa.me/13213154097"},
+  {name:"Samuel Vejar", zone:"Tampa, Estados Unidos", wa:"https://wa.me/17863077229"},
+  {name:"Esther Rodríguez", zone:"Montevideo, Uruguay", wa:"https://wa.me/59892318555"},
+  {name:"Yesika Coronado", zone:"Montevideo, Uruguay", wa:"https://wa.me/59893741680"},
+  {name:"Claudio Del Pino", zone:"Ciudad de Panamá", wa:"https://wa.me/50760754996"},
+  {name:"Rafael Ponte", zone:"Ciudad de Panamá", wa:"https://wa.me/50763679389"},
+  {name:"Jose Antillano", zone:"República Dominicana", wa:"https://wa.me/18495327447"},
+  {name:"Omar Escobar", zone:"Ecuador", wa:"https://wa.me/593995244589"},
+];
+
+const WA_SVG = `<svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:white;flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.528 5.855L.057 23.882l6.198-1.625A11.93 11.93 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.793 9.793 0 01-5.001-1.374l-.358-.213-3.683.966.983-3.595-.234-.369A9.79 9.79 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182S21.818 6.58 21.818 12 17.42 21.818 12 21.818z"/></svg>`;
+
+const searchInput = document.getElementById('search');
+const noResults = document.getElementById('no-results');
+const directorio = document.getElementById('directorio');
+
+searchInput.addEventListener('input', function() {
+  const q = this.value.toLowerCase().trim();
+  if (!q) {
+    directorio.innerHTML = '';
+    directorio.style.display = '';
+    noResults.style.display = 'none';
+    location.reload();
+    return;
+  }
+
+  const matches = allEntries.filter(e =>
+    e.name.toLowerCase().includes(q) || e.zone.toLowerCase().includes(q)
+  );
+
+  directorio.innerHTML = '';
+  noResults.style.display = 'none';
+
+  if (matches.length === 0) {
+    noResults.style.display = 'block';
+    return;
+  }
+
+  matches.forEach(e => {
+    const div = document.createElement('div');
+    div.className = 'entry';
+    div.innerHTML = `
+      <div class="entry-name">${e.name}<div class="entry-sub">${e.zone}</div></div>
+      <a class="wa-btn" href="${e.wa}" target="_blank">${WA_SVG} WhatsApp</a>
+    `;
+    directorio.appendChild(div);
+  });
+});
+</script>
+</body>
+</html>
